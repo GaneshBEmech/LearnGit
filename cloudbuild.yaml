@@ -3,3 +3,5 @@ steps:
   args: ['init']
 - name: 'hashicorp/terraform:latest'
   args: ['apply', '-auto-approve']
+options:
+  logging: NONE
