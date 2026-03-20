@@ -1,0 +1,8 @@
+steps:
+- name: 'hashicorp/terraform:latest'
+  args: ['init']
+- name: 'hashicorp/terraform:latest'
+  args: ['apply', '-auto-approve']
+logsBucket: 'gs://my-project-3-358101-bucket-2'
+options:
+  logging: GCS_ONLY
