@@ -1,3 +1,11 @@
+terraform {
+  backend "gcs" {
+    bucket  = "my-project-3-358101-statefilebucket-cloud-build"
+    prefix  = "terraform/state"
+  }
+}
+
+
 resource "google_storage_bucket" "GCS1" {
    name = "my-project-3-358101-bucket-tf-new"
    location = "us-central1"
